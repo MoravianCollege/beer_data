@@ -1,0 +1,5 @@
+requests
+pytest
+moto
+boto3
+requests_mock
