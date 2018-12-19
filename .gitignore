@@ -1,0 +1,6 @@
+.idea/
+.env/
+libraries/
+function.zip
+__pycache__
+
