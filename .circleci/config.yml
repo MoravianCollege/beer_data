@@ -15,6 +15,9 @@ jobs:
           command: |
             . venv/bin/activate
             mkdir test-reports
+            echo 'export AWS_SECRET_ACCESS_KEY=foobar_secret' >> $BASH_ENV
+            echo 'export AWS_ACCESS_KEY_ID=foobar_key' >> $BASH_ENV
+            source $BASH_ENV
             pytest --junitxml=test-reports/junit.xml
 
       - store_test_results:
